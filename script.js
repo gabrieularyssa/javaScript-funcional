@@ -1,3 +1,4 @@
+/*---------------------------------------------------Exemplo Aula 1--------------------------------------------*/
 const notas = [7, 7.8, 8.3, 6.9, 10, 10]
 //criando um codigo com o paradigma imperativo
 function calculaMedia(notas){
@@ -16,11 +17,9 @@ console.log(`De forma declarativa a media da turma é ${calculaMedia(notas)}`)
         notas.length
     )
     console.log(`De forma declarativa a media da turma é ${mediaTurma.toFixed(2)}`)
-
 //ambos os codigos tem a mesma funcionalidade contudo o segundo codigo torna-se mais funcional e reutilizavel
 //o uso do .toFixed nao interfere no exemplo, apenas limita o valor retornado a duas casas após a vírgula
-
-/*---------------------------------------------------------------------------------------------------------------*/
+/*---------------------------------------------------Exemplo Aula 2--------------------------------------------*/
 const alunos = [
     {nome:'Ana', nota:9.5},
     {nome:'Bia', nota:7},
@@ -39,7 +38,6 @@ for(let i = 0; i < alunos.length; i++){
 console.log(aprovados)
 
 // recriando o algoritmo anterior de forma funcional temos: 
-
 const estaAprovado = aluno => aluno.nota >= 7
 const aprovaados = alunos.filter(estaAprovado)
 console.log(aprovaados)
